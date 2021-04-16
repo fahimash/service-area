@@ -1,0 +1,251 @@
+/*
+Theme Name: Quick Start Pack
+Description: All themes css code is here. 
+Author: TwinkleTheme
+Author URI: https://themeforest.net/user/twinkletheme
+Version: 1.0.0
+*/
+
+/*=======================================
+    CSS Index
+=========================================*/
+/*=======================================
+01. Default CSS
+02. Preloader
+
+=======================================*/
+
+/*==========================
+    01. Default CSS
+============================*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 20px;
+}
+h5{
+    font-size: 18px;
+}
+h6{
+    font-size: 16px;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+a:hover{
+    text-decoration: none;
+    color: #222;
+}
+a:focus,
+button:focus{
+    outline: none;
+}
+.floatleft{
+    float: left;
+}
+.floatright{
+    float: right;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #4b4848;
+    opacity: 0.7; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #4b4848;
+    opacity: 0.7;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #4b4848;
+    opacity: 0.7;
+}
+
+#scrollUp {
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 12px;
+    background: #34495e;
+}
+
+/*==========================
+    02. Preloader
+============================*/
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #ddd;
+    z-index: 99;
+}
+.preloader .sk-plane,
+.preloader .sk-chase,
+.preloader .sk-bounce,
+.preloader .sk-wave,
+.preloader .sk-pulse,
+.preloader .sk-flow,
+.preloader .sk-swing,
+.preloader .sk-circle,
+.preloader .sk-circle-fade,
+.preloader .sk-grid,
+.preloader .sk-fold,
+.preloader .sk-wander {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    margin: 0;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.sk-plane,
+.sk-chase-dot:before,
+.sk-bounce-dot,
+.sk-wave-rect,
+.sk-pulse,
+.sk-flow-dot,
+.sk-swing-dot,
+.sk-circle-dot:before,
+.sk-circle-fade-dot:before,
+.sk-grid-cube,
+.sk-fold-cube:before,
+.sk-wander-cube {
+    background-color: yellow;
+}
+
+
+.section-padding {
+  padding: 120px 0;
+}
+.service-left {
+  position: relative;
+  z-index: 1;
+}
+
+.service-left:after {
+  position: absolute;
+  left: 25%;
+  top: 55%;
+  width: 530px;
+  height: 530px;
+  content: "";
+  background: #f2f2f2;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+}
+.service-box.style-one {
+  padding: 40px 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding-left: 25px;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  border-radius: 5px;
+}
+.service-box.style-one h4 {
+  margin: 0 0 20px;
+}
+.service-box.style-one .service-icon {
+  height: 80px;
+  width: 80px;
+  border: 1px solid #dddd;
+  text-align: center;
+  line-height: 80px;
+  font-size: 30px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+
+.service-box.style-one:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: auto;
+  content: "";
+  background: #222;
+  width: 100%;
+  height: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.service-box.style-one:hover::before {
+  bottom: 0;
+  top: auto;
+  height: 100%;
+}
+
+
+.service-box.style-one:hover h4, 
+.service-box.style-one:hover p, 
+.service-box.style-one:hover .service-icon {
+  color: #fff;
+} 
+
+.service-right {
+  padding-left: 90px;
+}
+.service-right span {
+  margin-bottom: 20px;
+  display: inline-block;
+  position: relative;
+}
+.service-right span:after {
+  position: absolute;
+  top: 50%;
+  right: -60%;
+  content: "";
+  width: 70px;
+  height: 2px;
+  background: #222;
+}
+.service-right h3 {
+  margin-bottom: 30px;
+}
+.service-right p {
+  line-height: 1.7;
+}
+.boxed-btn {
+  border: 1px solid #222;
+  padding: 13px 35px;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.service-right .boxed-btn {
+  margin-top: 10px;
+}
